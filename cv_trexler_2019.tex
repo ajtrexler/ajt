@@ -1,0 +1,199 @@
+%------------------------------------
+% AJT Curriculum Vitae
+
+% Template from: http://nitens.org/taraborelli/home
+% with mods to font and layout
+
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{fontspec} 
+\usepackage{fontawesome}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[shortlabels]{enumitem}
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=6.5in, textheight=9.5in, marginparsep=5pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+\setromanfont [Ligatures={Common}, BoldFont={Fontin Bold}, ItalicFont={Fontin Italic}]{Fontin}
+\setsansfont [Ligatures={Common}, BoldFont={Fontin Sans Bold}, ItalicFont={Fontin Sans Italic}]{Fontin Sans}
+\setmonofont[Scale=0.8]{Monaco} 
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Fontin}\selectfont\itshape\&}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\years}[1]{\marginnote{\footnotesize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{5pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\rmfamily\mdseries\upshape\Large}
+\subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
+
+% PDF SETUP
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Adam J. Trexler CV},pdfauthor={Adam Trexler}]{hyperref}  
+\hypersetup{linkcolor=cyan,citecolor=black,filecolor=black,urlcolor=Orchid} 
+
+% DOCUMENT
+\begin{document}
+\begin{center}
+%\setmainfont{Fontin Sans}
+{\LARGE Adam J. Trexler, Ph.D.}\\[0.5cm]
+
+\href{mailto:adam.trexler@posteo.net}{adam.trexler@posteo.net} |
+\faGithub\href{https://www.github.com/ajtrexler}{ ajtrexler} |
+\href{https://www.adamtrexler.com}{www.adamtrexler.com}\\[1cm] 
+\end{center}
+%%\hrule
+\section*{Current position}
+\sffamily
+\textbf{Data Scientist, }\href{www.elderresearch.com}{Elder Research Inc.}\\
+email: \href{mailto:adam.trexler@elderresearch.com}{adam.trexler@elderresearch.com}\\
+phone: 855-973-7673 x742\\
+location: Arlington, VA\\
+
+\section*{Professional Experience}
+\noindent
+\years{2018-}\textbf{Data Scientist}, Elder Research Inc.
+\begin{enumerate}[$\bullet$,nosep]
+\item Supporting Office of People Analytics Data Science team with focus on force resilience modeling.\\
+\end{enumerate}
+
+\years{2017-2018}\textbf{Data Scientist}, Northrop Grumman Corporation.
+\begin{enumerate}[$\bullet$,nosep]
+\item Engineered production ensemble models for predicting very low baserate targets within personnel security risk problemspace.
+\item Core developer on small team building data science pipeline and processing tools.
+\item Lead author on two year-end technical reports delivered to client.  Primary author on two funding proposals winning over \$500K in research funding.\\
+\end{enumerate}
+
+\years{2013-2017}\textbf{Postdoctoral Fellow}, National Heart Lung and Blood Institute, National Institutes of Health.
+\begin{enumerate}[$\bullet$,nosep]
+\item Studied molecular details of insulin release using high-resolution fluorescence microscopy, automated image processing, and clustering techniques.  
+\item Work resulted in one first-author peer-reviewed publication and four total publications.\\
+\end{enumerate}
+%\hrule
+\section*{Education}
+\noindent
+\years{2007-2013}\textsc{Ph.D.}, Biophysics, Yale University, New Haven, CT.\\
+\textit{Dissertation}: Exploring the disordered state and folding of alpha-synuclein using single molecule fluorescence spectroscopy.\\
+\textit{Advisor}: Dr. Elizabeth Rhoades\\
+\years{2003-2007}\textsc{B.A.}, Biology, McDaniel College, Westminster, MD.\\
+
+%\hrule
+
+\section*{Publications \amper{} talks}
+
+\subsection*{Journal articles}
+\noindent
+
+\years{2018}Guo M, Chandris P, Giannini JP, \textbf{Trexler AJ}, Fischer R, Chen J, Vishwasrao HD, Rey-Suarez I, Wu Y, Waterman C, Patterson GH, Upadhyaya A, Taraska JW, Shroff H (2018) Single-shot super-resolution total internal reflection fluorescence microscopy: Nature Methods.\\
+
+\years{2017}\textbf{Trexler AJ}, Taraska JW. Regulation of insulin exocytosis by calcium-dependent protein kinase C in beta cells.  Cell Calcium.\\
+
+\years{2016}\textbf{Trexler AJ}, Sochacki KA, Taraska JW. 2016. Imaging the recruitment and loss of proteins and lipids at single sites of calcium-triggered exocytosis.  Molecular Biology of the Cell 27: 2423-2434.\\
+
+\years{2016}\textbf{Trexler AJ}, Taraska JW. Two-color total internal refection fluorescence microscopy of exocytosis in endocrine cells. Methods in Molecular Biology: Light Microscopy 151-165.\\
+
+\years{2016}Rezgui R, Blumer K, Yeoh-Tan G, \textbf{Trexler AJ}, Magzoub M. Precise quantification of cellular uptake of cell-penetrating peptides using fluorescence activated cell sorting and fluorescence correlation spectroscopy. Biochimica et Biophysica Acta 1858: 1499-1506. \\
+
+\years{2012}\textbf{Trexler AJ}, Rhoades E. N-terminal acetylation is critical for forming structured oligomer of alpha-synuclein. Protein Science 21(5): 601-605.\\
+
+\years{2012}\textbf{Trexler AJ}, Rhoades E. Function and Dysfunction of α-Synuclein: Probing Conformational Changes and Aggregation by Single Molecule Fluorescence. Molecular Neurobiology 47(2): 622-631.\\
+
+\years{2012}Ciubotaru M, \textbf{Trexler AJ}, Spiridon L, Surleac M, Rhoades E, Petrescu A, Schatz D. RAG and HMGB1 create a large bend in the 23RSS in the V(D)J recombination synaptic complex. Nucleic Acids Research 41(4): 2437-2454.\\
+
+\years{2012}Nath A, Sammalkorpi M, Dewitt D, Schreck C, \textbf{Trexler AJ}, Rhoades E, O’Hern C. The conformational ensembles of alpha-synuclein and tau: combining single-molecule FRET and simulations. Biophysical Journal 103(9): 1940-1949.\\
+
+\years{2011}Sevcsik E, \textbf{Trexler AJ}, Dunn JM, Rhoades E. Allostery in a disordered protein: oxidative modifications to alpha-synuclein act distally to regulate membrane binding. Journal of the American Chemical Society 133(18): 7152-7158.\\
+
+\years{2010}\textbf{Trexler AJ}, Rhoades E. Single molecule characterization of alpha-synuclein in aggregation-prone states. Biophysical Journal 99(9): 3048-2055.\\
+
+\years{2010}Nath A, \textbf{Trexler AJ}, Koo P, Miranker AD, Atkins WM, Rhoades E.  Single-molecule fluorescence spectroscopy using phospholipid bilayer nanodiscs. Methods in Enzymology 472: 89-117.\\
+
+\years{2009}\textbf{Trexler AJ}, Rhoades E. Alpha-synuclein binds large unilamellar vesicles as an extended helix. Biochemistry 48(11): 2304-2306.\\
+
+\years{2007}\textbf{Trexler AJ}, Nilsson MR. The formation of amyloid fibrils from proteins in the lysozyme family. Current Protein and Peptide Science 8(6): 537-557.\\
+
+\subsection*{Technical Reports}
+\years{2018} GHER v2.0 and Insider Threat Stress Study, Research Facilication Lab, Northrop Grumman Corporation.\\
+
+\years{2017} GOTS Hybrid Ensemble Risk Rating Tool (GHER)  v1.0, Research Facilitation Lab, Northrop Grumman Corporation.\\
+
+\subsection*{Selected Talks}
+\noindent
+\years{2016}“Probing the lipid environment at single sites of exocytosis” FASEB Summer Research Conference, Molecular Biophysics of Membranes.\\
+
+\years{2015}“Temporally resolving protein and lipid colocalization at exocytic sites”  59th Annual Meeting of the Biophysical Society. Platform Speaker in Exocytosis, Endocytosis, and Membrane Fusion.\\
+
+\years{2012}“Alpha-synuclein aggregation and conformational behavior in the cytoplasm and crowded environments” FASEB Summer Research Conferences, Protein Folding in the Cell.\\
+
+\years{2012}“Characterization of alpha-synuclein in intracellular and crowded environments” Gordon Research Seminar: Protein Folding Dynamics.\\
+
+\years{2011}“Towards understanding alpha-synuclein conformation within toxic oligomeric states” 55th Annual Meeting of the Biophysical Society. Platform Speaker in Protein Aggregates.\\
+
+\years{2009}“Single-molecule FRET on alpha-synuclein membrane-bound conformational states” 53rd Annual Meeting of the Biophysical Society. Platform Speaker in Protein Folding and Stability.\\
+
+\subsection*{Selected Posters}
+\noindent
+\years{2015}“Temporally resolving protein and lipid dynamics at single sites of exocytosis” Gordon Research Conference: Molecular Membrane Biology\\
+[1cm]
+
+\years{2014} “Investigating the regulation of pulmonary surfactant secretion using fluorescence microscopy” American Society for Cell Biology Annual Meeting.\\
+
+\years{2012}“Towards the native state of the intrinsically disordered protein alpha-synuclein” Cellular and Molecular Biology Training Grant Research Symposium, Yale University.\\
+
+\years{2012}“Characterization of alpha-synuclein in intracellular and crowded environments” Gordon Research Conference: Protein Folding Dynamics.\\
+
+\years{2010}“Nature of the low pH alpha-synuclein state revealed with smFRET” 54th Annual Meeting of the Biophysical Society.\\
+
+\section*{Teaching}
+\years{2009-2012}Graduate Teaching Fellow, Yale University, New Haven, CT.\\
+
+\years{2010-2011}Writing tutor, Residential College Math and Science Tutoring, Yale University, New Haven, CT.\\
+
+\years{2005-2007}Teaching Assistant, Organic Chemistry Laboratory, McDaniel College, Westminster, MD.\\
+
+\years{2004-2007}Writing Tutor, McDaniel College, Westminster, MD.\\
+
+%\hrule
+
+\section*{Grants, honors \amper{} awards}
+\noindent
+\years{2018}Primary author for two PACPMO research proposals in personnel security and vetting, RFL \amper{} Northrop Grumman Corporation.\\
+\years{2015}Fellows Award for Research Excellence (FARE) Travel Award Winner, NIH\\
+\years{2013}Mary Ellen Jones Dissertation Prize, Molecular Biophysics and Biochemistry, Yale University\\
+\years{2010-2012}Ruth L. Kirschstein National Research Service Award F31 Predoctoral Fellowship	\\
+
+%\hrule
+
+\section*{Memberships}
+\years{2008-2017}Biophysical Society\\
+\years{2014-2016}American Society for Cell Biology\\
+\years{2007-}Phi Beta Kappa\\
+
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- Typeset in \href{http://xetex.sourceforge.net/}{
+\fontspec{Times New Roman}\XeTeX }\\
+\href{https://github.com/ajtrexler/ajt}{most recently updated version of this CV}}
+\end{center}
+
+\end{document}
